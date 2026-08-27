@@ -117,7 +117,7 @@ document.getElementById('lang-en').addEventListener('click', () => setLanguage('
 // Form Submission Logic
 const form = document.getElementById('booking-form');
 const formMessage = document.getElementById('form-message');
-const GOOGLE_WEB_APP_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE'; // We will replace this later!
+const GOOGLE_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby6XzSM1M1VecanXMMpX7U2DCY5_m-QirgBAacCVqk0ffFOoF2uqUBmLqcKdsh3pSge/exec';
 
 if (form) {
   form.addEventListener('submit', async (e) => {

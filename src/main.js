@@ -143,7 +143,10 @@ if (form) {
 
       await fetch(GOOGLE_WEB_APP_URL, {
         method: 'POST',
-        body: JSON.stringify(data) // The google script will parse this
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8',
+        },
+        body: JSON.stringify(data)
       });
       
       form.reset();

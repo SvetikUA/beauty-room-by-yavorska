@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Room by Yavorska</title>
+  <meta name="description" content="Елегантна студія брів. Корекція, фарбування, ламінування." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-ivory text-warm-brown font-sans antialiased">
+  
+  <!-- Header -->
+  <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-serif text-2xl tracking-wide font-semibold text-warm-brown">
+        <a href="#">Beauty Room</a>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
+        <a href="#about" class="hover:text-cappuccino transition-colors" data-i18n="nav.about">About</a>
+        <a href="#services" class="hover:text-cappuccino transition-colors" data-i18n="nav.services">Services</a>
+        <a href="#portfolio" class="hover:text-cappuccino transition-colors" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#contact" class="hover:text-cappuccino transition-colors" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <!-- Language Switcher -->
+        <div class="flex gap-2 text-sm font-medium">
+          <button id="lang-nl" class="opacity-50 hover:opacity-100 transition-opacity">NL</button>
+          <span class="opacity-30">|</span>
+          <button id="lang-en" class="opacity-100 hover:opacity-100 transition-opacity">EN</button>
+        </div>
+        <!-- Booking CTA -->
+        <a href="#booking" class="hidden md:inline-block px-6 py-2 border border-cappuccino text-cappuccino hover:bg-cappuccino hover:text-ivory transition-colors duration-300 text-sm tracking-widest uppercase">
+          <span data-i18n="nav.book">Book Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center bg-light-beige">
+      <!-- Placeholder image for Hero -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop" alt="Hero Background" class="w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-t from-ivory to-transparent"></div>
+      </div>
+      <div class="relative z-10 text-center px-6 max-w-3xl">
+        <h1 class="font-serif text-5xl md:text-7xl mb-6 text-warm-brown leading-tight">
+          <span data-i18n="hero.title1">Perfect Brows.</span><br>
+          <span class="italic text-cappuccino" data-i18n="hero.title2">Flawless Look.</span>
+        </h1>
+        <p class="text-lg md:text-xl mb-10 text-warm-brown/80 font-light max-w-xl mx-auto" data-i18n="hero.subtitle">
+          Professional eyebrow styling, lamination, and tinting in an elegant atmosphere.
+        </p>
+        <a href="#booking" class="inline-block px-10 py-4 bg-cappuccino text-ivory text-sm uppercase tracking-widest hover:bg-warm-brown transition-colors duration-300">
+          <span data-i18n="hero.cta">Book Appointment</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Section (Placeholder) -->
+    <section id="services" class="py-24 px-6 bg-ivory">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-serif text-4xl mb-12 text-warm-brown" data-i18n="services.title">Our Services</h2>
+        <div id="services-list" class="flex flex-col gap-8 text-left">
+          <!-- Dynamic Content from Sanity will go here -->
+          <div class="border-b border-cappuccino/20 pb-4">
+             <div class="flex justify-between items-baseline mb-2">
+               <h3 class="text-xl font-serif text-warm-brown">Eyebrow Lamination</h3>
+               <span class="text-lg font-serif">€45</span>
+             </div>
+             <p class="text-sm font-light text-warm-brown/70">Full shaping, tinting and lamination</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 bg-light-beige">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="font-serif text-4xl mb-12 text-warm-brown" data-i18n="nav.portfolio">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Placeholder images for Portfolio -->
+          <div class="aspect-square overflow-hidden bg-ivory group">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="Brows 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="aspect-square overflow-hidden bg-ivory group">
+            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=800&auto=format&fit=crop" alt="Brows 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="aspect-square overflow-hidden bg-ivory group">
+            <img src="https://images.unsplash.com/photo-1512413914564-9b0d91244855?q=80&w=800&auto=format&fit=crop" alt="Brows 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-ivory border-t border-cappuccino/10">
+      <div class="max-w-3xl mx-auto flex flex-col md:flex-row gap-12">
+        <div class="flex-1">
+          <h2 class="font-serif text-4xl mb-6 text-warm-brown" data-i18n="nav.contact">Contact</h2>
+          <p class="text-warm-brown/80 font-light mb-8">
+            Beauty Room by Yavorska<br>
+            Amsterdam, Netherlands<br><br>
+            <a href="https://instagram.com/" target="_blank" class="text-cappuccino hover:text-warm-brown transition-colors">Instagram</a> | 
+            <a href="https://t.me/" target="_blank" class="text-cappuccino hover:text-warm-brown transition-colors">Telegram</a>
+          </p>
+        </div>
+        
+        <div class="flex-1" id="booking">
+          <h3 class="font-serif text-2xl mb-6 text-warm-brown" data-i18n="nav.book">Book Now</h3>
+          <form id="booking-form" class="flex flex-col gap-4">
+            <input type="text" name="name" placeholder="Name" required class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown placeholder-warm-brown/50">
+            <input type="tel" name="phone" placeholder="Phone Number" required class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown placeholder-warm-brown/50">
+            <select name="service" class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown">
+              <option value="lamination">Eyebrow Lamination</option>
+              <option value="tinting">Eyebrow Tinting</option>
+              <option value="shaping">Eyebrow Shaping</option>
+            </select>
+            <button type="submit" class="mt-4 px-8 py-3 bg-cappuccino text-ivory text-sm uppercase tracking-widest hover:bg-warm-brown transition-colors duration-300">Submit Request</button>
+            <p id="form-message" class="text-xs text-cappuccino mt-2 hidden">Request sent successfully!</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-warm-brown text-ivory/50 text-center py-6 text-xs font-light">
+    &copy; <span id="year"></span> Beauty Room by Yavorska. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

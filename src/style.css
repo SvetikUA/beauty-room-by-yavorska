@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #FDFBF7;
+  --color-cappuccino: #A68A7B;
+  --color-nude: #D4BCAE;
+  --color-soft-pink: #E9D5D3;
+  --color-warm-brown: #4A3A35;
+  --color-light-beige: #F5EFEB;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Glassmorphism utility */
+@utility glass {
+  background: rgba(253, 251, 247, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(166, 138, 123, 0.1);
+}

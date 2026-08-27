@@ -113,7 +113,7 @@
           <h3 class="font-serif text-2xl mb-6 text-warm-brown" data-i18n="nav.book">Book Now</h3>
           <form id="booking-form" class="flex flex-col gap-4">
             <input type="text" name="name" placeholder="Name" required class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown placeholder-warm-brown/50">
-            <input type="tel" name="phone" placeholder="Phone Number" required class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown placeholder-warm-brown/50">
+            <input type="tel" name="phone" placeholder="Phone Number (e.g. +31 6 12345678)" required pattern="^\+?[0-9\s\-\(\)]{7,15}$" title="Please enter a valid phone number (7-15 digits, you can use + or -)" class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown placeholder-warm-brown/50">
             <select name="service" class="border-b border-warm-brown/30 bg-transparent py-2 px-1 text-sm outline-none focus:border-cappuccino transition-colors text-warm-brown">
               <option value="lamination">Eyebrow Lamination</option>
               <option value="tinting">Eyebrow Tinting</option>
